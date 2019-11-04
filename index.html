@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dictionary App</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Recipe App</title>
 </head>
 <body>
-	<div class="container">
-		<div>
-			<input id="inputValue" type="text" />
+	<sidebar>
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <input id="inputValue" type="text" placeholder="Search for recipes..." />
 		</div>
+
+		<div class="menu-icon" onclick="openNav(this)">
+		  <div class="bar1"></div>
+		  <div class="bar2"></div>
+		  <div class="bar3"></div>
+		</div>
+	</sidebar>
+
+	<div style="width: 650px; margin: 50px auto;">
+	  <img class="mySlides" src="images/oatmeal-patties-with-carrots-8.jpg" />
+	  <img class="mySlides" src="images/download (1).jpg" />
+	  <img class="mySlides" src="images/unnamed.jpg" />
+	</div>
+
+	<div class="container">
 		<div id="result"></div>
 	</div>
 	<script src="js/script.js"></script>
 </body>
 </html>
+
