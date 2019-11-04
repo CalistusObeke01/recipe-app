@@ -1,2 +1,2 @@
-# dictionary-app
-App that users can search for words and their meanings
+# recipe-app
+App that enables users search for specific recipe
