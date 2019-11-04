@@ -2,7 +2,7 @@ const input = document.querySelector('#inputValue')
 const api = 'https://www.food2fork.com/' 
 const apiKey = '6dfbb86e673af0a3e1d482e4fd86ed8c'
 
-const fetchWords = () => {
+const fetchRecipe = () => {
 	fetch(`https://www.food2fork.com/api/search?key=${apiKey}&q=${input.value}`)
 		.then(response => response.json())
 		.then(data => {
@@ -27,7 +27,7 @@ const fetchWords = () => {
 		.catch(err => console.error(err))
 }
 
-input.addEventListener('keydown', fetchWords) 
+input.addEventListener('keydown', fetchRecipe) 
 
 
 function closeNav() {
